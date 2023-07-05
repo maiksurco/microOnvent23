@@ -1,0 +1,20 @@
+server:
+    port: 8085
+spring:
+    application:
+        name: config-server
+    cloud:
+        config:
+            server:
+                git: 
+                    uri: https://github.com/maiksurco/microOnvent2023.git 
+                    search-paths: config-data
+                    username: rickisurco
+                    password: a12b68deh6mk8910GIT
+                    default-label: main
+    security: 
+        user:
+            name: root
+            password: s3cre3t
+
+
