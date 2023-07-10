@@ -9,12 +9,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:4201", "http://localhost:4200"})
 @RequestMapping("/producto")
 public class ProductoController {
     @Autowired
     private ProductoService productoService;
-
-    
 
     @GetMapping()
     public List<Producto> listar() {

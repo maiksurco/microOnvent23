@@ -11,6 +11,7 @@ import com.onvent.pedido.repository.PedidoRepository;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:4201", "http://localhost:4200"})
 @RequestMapping("/pedidos")
 public class PedidoController {
     @Autowired

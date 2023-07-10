@@ -16,7 +16,7 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Integer usua_id;
-    private LocalDateTime fecha;
+    private String fecha;
     private String estado;
     private Double total;
     private String email;

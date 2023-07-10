@@ -10,14 +10,12 @@ import com.onvent.gestionUsua.service.UsuaService;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:4201", "http://localhost:4200"})
 @RequestMapping("/usuario")
 public class UsuaControla {
     @Autowired
-    private final UsuaService usuaService;
-    
-    public UsuaControla(UsuaService usuaService) {
-        this.usuaService = usuaService;
-    }
+    private UsuaService usuaService;
+
 
     @GetMapping
     public ResponseEntity<List<Usua>> getAllUsua() {

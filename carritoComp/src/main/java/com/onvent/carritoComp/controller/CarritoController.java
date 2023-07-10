@@ -2,6 +2,7 @@ package com.onvent.carritoComp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import com.onvent.carritoComp.service.CarritoService;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:4201", "http://localhost:4200"})
 @RequestMapping("/carrito")
 public class CarritoController {
      @Autowired
